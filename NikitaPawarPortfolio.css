@@ -39,7 +39,6 @@ body, html {
     padding-top: 5%;
     padding-bottom: 5%;
     color: whitesmoke;
-    -webkit-tap-highlight-color: transparent;
   }
   .btnlinkedin{
    
@@ -47,8 +46,12 @@ body, html {
     padding-top: 5%;
     padding-bottom: 5%;
     color: whitesmoke;
-    -webkit-tap-highlight-color: transparent;
+  
   }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+}
   .btnGithub:hover 
   {
     background-color: transparent;

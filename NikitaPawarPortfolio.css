@@ -2,21 +2,19 @@ body, html {
     height: 100%;
     margin: 0;
   }
-  
- .container {
+ 
+    
+.container {
     /* The image used */
-    background-image: url("../Home_page.webp");
-  
+    background-image: url("../Portfolio/Images/Home_page.jpg");
     /* Full height */
-    height: 100%; 
-  
+    height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color:whitesmoke;
-    
-  }
+    color: whitesmoke;
+}
   .btn
   {
     padding: 20px 20px 20px 20px;
@@ -109,15 +107,16 @@ body {
   .arrow {
     width: 40px;
     height: 40px;
-    top: 50%;
-    margin: -20px 0 0 -20px;
+   
+    margin: 40px 0 0 -20px;
+    transform: rotateY('angle');
     -webkit-transform: rotate(45deg);
     border-left: none;
     border-top: none;
     border-right: 2px #fff solid;
     border-bottom: 2px #fff solid;
   }
-  
+
   .arrow:before {
     content: "";
     width: 20px;

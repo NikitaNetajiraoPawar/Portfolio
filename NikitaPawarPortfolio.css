@@ -22,6 +22,7 @@ body, html {
     text-shadow: none;
     color: black;
     -webkit-tap-highlight-color: transparent;
+    
   }
 
   .Links
@@ -38,6 +39,7 @@ body, html {
     padding-top: 5%;
     padding-bottom: 5%;
     color: whitesmoke;
+    -webkit-tap-highlight-color: transparent;
   }
   .btnlinkedin{
    
@@ -45,6 +47,7 @@ body, html {
     padding-top: 5%;
     padding-bottom: 5%;
     color: whitesmoke;
+    -webkit-tap-highlight-color: transparent;
   }
   .btnGithub:hover 
   {

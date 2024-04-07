@@ -1,197 +1,75 @@
-body, html {
-    height: 100%;
-    margin: 0;
-  }
- 
-    
-.container {
-    /* The image used */
-    background-image: url("../Portfolio/Images/Home_page.jpg");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: whitesmoke;
-}
-  .btn
-  {
-    padding: 20px 20px 20px 20px;
-    text-decoration: none;
-    text-shadow: none;
-    color: black;
-    -webkit-tap-highlight-color: transparent;
-    
-  }
+ /* Custom Styles */
+        body {
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333; /* Default text color */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+        }
 
-  .Links
-  {   
-    content: inherit;
-    display: inline-block;
-    font-size:xx-large;
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 30px;
-  }
-  .btnGithub {
-    border-radius: 10px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: whitesmoke;
-  }
-  .btnlinkedin{
-   
-    border-radius: 10px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: whitesmoke;
-  
-  }
+        .dark-mode body {
+            background-color: #1f2937; /* Dark gray background in dark mode */
+            color: #ffffff; /* White text color in dark mode */
+        }
 
-  * {
-    -webkit-tap-highlight-color: transparent;
-}
-  .btnGithub:hover 
-  {
-    background-color: transparent;
-    color: black;
-    border-radius: 10px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  .btnlinkedin:hover
-  {
-    border-radius: 10px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: transparent;
-    color: whitesmoke;
-  }
-  .content {
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  .content span{
-    size: 30px;
-  }
-.icon-bar >a
-{
-    font-size: 25px;
-    color:whitesmoke;
-    float:right;
-    padding-right: 25%;
-}
-.icon-bar >a:hover{
-    font-size: 30px;
-    background-color: transparent;
-    color: whitesmoke;
-}
-div .projectDetails{
-    border: 1px solid black;
-/*display: inline-block;*/
-    float:left;
-    width: 30%;
-    border-collapse: collapse;
-    display:grid;
-    margin-inline:3px;
-    margin:inherit;
-    
-}
+        .navbar {
+            background-color: #0A192F; /* Dark blue background for navbar */
+        }
 
-/*ARROW CSS STYLESHEET*/
-body {
-    background: #000;
-  }
-  
-  .arrow,
-  .arrow:before {
-    position: absolute;
-    left: 50%;
-  }
-  
-  .arrow {
-    width: 40px;
-    height: 40px;
-   
-    margin: 40px 0 0 -20px;
-    transform: rotateY('angle');
-    -webkit-transform: rotate(45deg);
-    border-left: none;
-    border-top: none;
-    border-right: 2px #fff solid;
-    border-bottom: 2px #fff solid;
-  }
+        .navbar a {
+            color: white;
+            transition: all 0.3s ease;
+        }
 
-  .arrow:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    margin: -10px 0 0 -10px;
-    border-left: none;
-    border-top: none;
-    border-right: 1px #fff solid;
-    border-bottom: 1px #fff solid;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: arrow;
-  }
-  
-  @keyframes arrow {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-10px, -10px);
-    }
-  }
-  
-  
-  
-  
-  /* Custom Animate.css */
-  
-  .animated.hinge {
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  
-  @-webkit-keyframes zoomIn {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale3d(.4, .4, .4);
-              transform: scale3d(.4, .4, .4);
-    }
-  
-    50% {
-      opacity: 0.5;
-    }
-    
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes zoomIn {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale3d(.4, .4, .4);
-              transform: scale3d(.4, .4, .4);
-    }
-  
-    50% {
-      opacity: 0.5;
-    }
-    
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  .zoomIn {
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-  }
+        .navbar a:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        .section-title {
+            color: #333;
+        }
+
+        .section-header {
+            background-color: #60A5FA; /* Blue background for section headers */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-content {
+            background-color: #EDF2F7; /* Light gray background for section content */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            margin-bottom: 30px;
+            height: 100%; /* Ensure each card takes up full height */
+            display: flex; /* Use flex layout */
+            flex-direction: column; /* Stack children vertically */
+        }
+
+        .section-content.dark-mode {
+            background-color: #2D3748; /* Dark gray background for section content in dark mode */
+        }
+
+        /* Animation for Section Content */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-section {
+            animation: fadeIn 1s ease-out;
+        }
